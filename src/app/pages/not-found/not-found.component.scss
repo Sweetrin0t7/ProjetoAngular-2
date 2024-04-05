@@ -1,0 +1,28 @@
+body {
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-linhas-dinamicas-de-estilo-de-papel_23-2149008629.jpg?w=996&t=st=1712343989~exp=1712344589~hmac=33e12f659cd87ce18c11e945458a3922fbec7393b290e8cd64416ce97de359cc);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+
