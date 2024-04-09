@@ -9,6 +9,8 @@ import { Observable } from 'rxjs';
 export class UserService {
   apiUrl = 'https://reqres.in/api/users';
 
+  responseData: any;
+
   constructor(private http: HttpClient) {}
 
   getUsers(page: number): Observable<any> {

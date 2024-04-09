@@ -1,0 +1,14 @@
+<h1>Informações da Conta</h1>
+<section>
+<div *ngIf="userService.responseData" class="conta-info">
+  <div *ngIf="userService.responseData" class="imagem">
+    <img [src]="userService.responseData.data.avatar" alt="Avatar">
+  </div>
+  <div *ngIf="userService.responseData" class="info">
+  <p>ID: {{ userService.responseData.data.id }}</p>
+  <p>E-mail: {{ userService.responseData.data.email }}</p>
+  <p>Nome: {{ userService.responseData.data.first_name }} {{ userService.responseData.data.last_name }}</p>
+  </div>
+</div>
+</section>
+

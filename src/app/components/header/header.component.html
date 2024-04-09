@@ -3,6 +3,14 @@
   <header class="topo">
     <div class="text-title">{{ title }}</div>
     <app-nav-bar class="nav-bar"></app-nav-bar>
+    <div class="conta" *ngIf="isUserAuthenticated()">
+      <a routerLink="/conta" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <img src="assets/conta.png" alt="Ícone da conta">
+      </a>
+    </div>
+    <div class="menu" *ngIf="!isUserAuthenticated()">
+      <a routerLink="/conta" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+    </div>
   </header>
 </section>
 
